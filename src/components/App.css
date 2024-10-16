@@ -1,0 +1,34 @@
+/* src/components/ProductGallery.css */
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between items */
+    padding: 20px;
+    background-color: #f9f9f9; /* Background color */
+  }
+  
+  .product-gallery__item {
+    flex: 1 1 calc(25% - 10px); /* Responsive item size */
+    border: 1px solid #ddd; /* Border around items */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Clip overflow */
+    background-color: #fff; /* Background color for items */
+    transition: transform 0.3s; /* Animation for hover effect */
+  }
+  
+  .product-gallery__item:hover {
+    transform: scale(1.05); /* Scale on hover */
+  }
+  
+  .product-gallery__image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .product-gallery__caption {
+    padding: 10px;
+    text-align: center; /* Centered caption */
+    font-weight: bold; /* Bold caption */
+    color: #333; /* Caption color */
+  }
+  

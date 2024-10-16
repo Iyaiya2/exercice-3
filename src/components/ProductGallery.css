@@ -1,0 +1,29 @@
+/* src/components/ProductGallery.css */
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacement entre les images */
+    padding: 20px; /* Espacement interne */
+    background-color: #f9f9f9; /* Couleur de fond */
+  }
+  
+  .product-gallery__item {
+    flex: 1 1 calc(25% - 10px); /* Quatre images par ligne avec un espacement */
+    max-width: 100%; /* Ne pas dépasser la largeur du conteneur */
+    border: 1px solid #ddd; /* Bordure autour de chaque image */
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden; /* Masquer les débordements */
+  }
+  
+  .product-gallery__image {
+    max-width: 100%; /* S'assurer que l'image ne déborde pas */
+    height: auto; /* Garder le ratio d'aspect */
+  }
+  
+  .product-gallery__caption {
+    padding: 10px; /* Espacement interne pour le texte de la légende */
+    text-align: center; /* Centrer le texte */
+    font-weight: bold; /* Mettre le texte en gras */
+    color: #333; /* Couleur du texte */
+  }
+  
